@@ -1,0 +1,17 @@
+//3110. Score of a String
+
+class Solution {
+public:
+    int scoreOfString(string s) {
+        
+        int sum=0, len = s.size();
+
+        for(int i=0; i < len-1; i++)
+        {
+            sum += abs((int) s[i] - (int) s[i+1]);
+        } 
+
+        return sum;
+
+    }
+};
